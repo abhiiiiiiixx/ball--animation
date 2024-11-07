@@ -1,0 +1,49 @@
+.container {
+    height: 50vh;
+    width: 50vw;
+    background-color: rgb(232, 163, 59);
+    border: 2px solid black;
+    position: relative;
+}
+
+.box1 {
+    background-color: blue;
+
+    height: 22px;
+    width: 22px;
+    border: 1px solid red;
+    border-radius: 22px;
+
+    position: absolute;
+ animation: go 3s linear infinite , up 1s ease-out infinite alternate;   
+
+
+}
+
+
+@keyframes go {
+    from {
+        left: 0;
+      
+
+    }
+
+    to {
+        left: 100%;
+     
+    }
+
+}
+
+
+
+@keyframes up {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: 100%;
+    }
+
+}
